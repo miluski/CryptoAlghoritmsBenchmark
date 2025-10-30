@@ -1,0 +1,139 @@
+Cryptographic Keys Used (for documentation):
+Caesar Shift: 21
+Vigenere Key: LHYRKKBQHI
+AES-128 Key (hex): 8d51310806bdea959d08d00f8b1a586a
+AES-192 Key (hex): 9bd94022460729eb69e2b10d5916fc0c81eb7a3b012eddd9
+AES-256 Key (hex): b1c07e5a44e02d899666ccbb4d6a54d28eb3f7462ea14721ce27aa89f966bcfd
+DES Key (hex): f3c955ad08da7dc9
+RSA-2048 Key (PEM):
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAuvKIRGvRsfpNE2aI7mFXrL7kxUuoQxj9SCCY6aCZX8Mh80bx
+vUtivwHx+K56tjkwpOaovmbPFIXZT7wKghWYQXtUcOoM6H5QjR3rNtKA+xyjg0Yw
+jkWlMjoxI4SlAkenA4taCmrPWgvubEZ8kXpLw4NGfvUaTpzGwWXJn1WoT31S7zfM
+gZcsjtp05sypBNFmTDKXjr+hVEgmrPGeqamP0dz65LKQU/1kDXmAHJ+vzq/LMqrc
+weh4ijy3hQOEj2MLVMjlbMQtVDyiAeGg9nBO7r6gDv53oFIE91Gipe+rpOfgcWsW
+ZE2NoglvT4o9MtmtMYGoHNoW3kKQv0fqp6ZlBwIDAQABAoIBAB/EFmOJ7pfPcElb
+oujeoYc46KadtHmyRVd8Mn+ASo97GMm9xFXl+WF7cyJOg4tzLFDY4NN5pLZYCBUE
+XsS75qM50Z9eJdNbo1RXQSCPpFsHAsHLq3SBYRCn0rG2WFOK2VZA14vtmk4yuNCt
+KX2OylDufYwVGeNBwIQcR6ZLZ84ZsyVCm70FKGg0w0dcDQa0qEeaKxvcuvN05qUW
+v6hLNTTl0xwN/XQgoIeC6Sd4zNG/5NB9pOG+EomW0Y5w3mC2c1S2Zu15BEroiAv6
+2jPhhQc7UFPshdBmkdoH46Vf5yw+N1ye/FeIt1nlXktB+ruMvFNkJHzaFt+IJjV0
+q5DvfAECgYEA2kDCCqVWUBmNX1GaVgnLphaUrWMu5Nfxwbtvr/oKkgOr/VVkWb1m
+c8WRKroK0uRjceVMT5AlfgwbahtlNIjpkB0iE1tqrEoCT6vgj/8waFpOBiHHhXp0
+WiZ0HRbmwuwDWbT7uuucvqpuXWKEE/FIFCfYGn3rhROkSrLHfITWymsCgYEA20e0
+/6l5YUzoCebd/lHJ0fNaisRli4/Vy1WdCql8eWOjkKSdEzquAQNqKEXYz25rdlnR
+jfGxl73qPdfoURemoTaxODtILRZwUpmdnSIDves8kL+thtD7xsGPmR2qda80oJoV
+CUxvuwuLEM7bW1X+qHusrrOP9INIzu51X0tibtUCgYASreItmRL3DgjMdKZ54KK+
+V0ZoRInZ6iV1yD352LOY5ZmNuAY7q/sdw3X2KzAL9qIQOGi8koCy9gROo4OY6HLc
+87Fb6MILdtYVzYcNq/CPrdLpsXBrGxzkLlBXwQMFAcATqGq3B71FkD6b3XeiYU8i
+8noLYmWK4TB5eC2cmZ3sewKBgEuGCwTzLechQdoHNfZd3RD+q/SXaBIFXDFIL2p4
+rXJxqugqih8RWtTmhC2SwPXQphqBHPeyguQseP0L2+vyJWXpHGitolJFJDKOzgZM
+rNVAq/9+xRll6RGvoPGvkgIucgXOi+hD90eI1kDXvh1bJPaKghM5rR8eCHmdD7fe
+kuxxAoGAFkVMOU2vn90o+YEwq61ElsdQyNCHD/cWJ2w3V6Xpbl9maNR9wo2hRijx
+trUx3lHXHlKXXeioGWYZRfZlUd7k9ur49tjN1MMsaxujgMTD+mDhvKXEK0oiwA7q
+4FALO/wobXh2Y58hkIZyYxaBToP4i/B4o8RpSwTVf4VZg50sa6I=
+-----END RSA PRIVATE KEY-----
+
+
+====================
+ Classical BENCHMARK 
+====================
+
+--- Testing 10 KB (10000 characters) over 3 iterations ---
+Caesar     | encrypt: 0.00274s CPU:0.24% MEM:53.2865MB | decrypt: 0.00254s CPU:0.22% MEM:53.1771MB
+Vigenere   | encrypt: 0.00354s CPU:0.30% MEM:53.2083MB | decrypt: 0.00324s CPU:0.28% MEM:53.3177MB
+
+--- Testing 98 KB (100000 characters) over 3 iterations ---
+Caesar     | encrypt: 0.01938s CPU:1.42% MEM:53.1927MB | decrypt: 0.02157s CPU:1.55% MEM:53.1667MB
+Vigenere   | encrypt: 0.02980s CPU:2.02% MEM:53.1979MB | decrypt: 0.04653s CPU:1.79% MEM:53.1510MB
+
+--- Testing 977 KB (1000000 characters) over 3 iterations ---
+Caesar     | encrypt: 0.21722s CPU:5.68% MEM:56.3333MB | decrypt: 0.20814s CPU:5.92% MEM:56.4688MB
+Vigenere   | encrypt: 0.22333s CPU:6.20% MEM:56.3906MB | decrypt: 0.21578s CPU:6.13% MEM:56.3073MB
+
+--- Testing 9766 KB (10000000 characters) over 3 iterations ---
+Caesar     | encrypt: 1.87227s CPU:8.42% MEM:85.3594MB | decrypt: 1.91512s CPU:8.51% MEM:84.7135MB
+Vigenere   | encrypt: 2.21715s CPU:8.62% MEM:84.9375MB | decrypt: 2.17258s CPU:8.65% MEM:85.1771MB
+
+--- Testing 48828 KB (50000000 characters) over 3 iterations ---
+Caesar     | encrypt: 9.28691s CPU:8.85% MEM:179.8854MB | decrypt: 9.24845s CPU:8.94% MEM:199.6458MB
+Vigenere   | encrypt: 10.63458s CPU:8.95% MEM:196.0573MB | decrypt: 10.96554s CPU:8.90% MEM:196.6719MB
+
+--- Testing 97656 KB (100000000 characters) over 3 iterations ---
+Caesar     | encrypt: 18.20934s CPU:8.93% MEM:294.9479MB | decrypt: 19.05352s CPU:8.90% MEM:266.3021MB
+Vigenere   | encrypt: 21.39576s CPU:8.99% MEM:322.4271MB | decrypt: 21.95003s CPU:8.98% MEM:309.8698MB
+
+--- Testing 195312 KB (200000000 characters) over 3 iterations ---
+Caesar     | encrypt: 35.59866s CPU:9.03% MEM:517.3438MB | decrypt: 37.83614s CPU:8.98% MEM:478.8750MB
+Vigenere   | encrypt: 42.50445s CPU:9.05% MEM:618.8229MB | decrypt: 42.86230s CPU:9.05% MEM:540.4375MB
+
+====================
+ Symmetric BENCHMARK 
+====================
+
+--- Testing 10 KB (10000 characters) over 3 iterations ---
+AES-128    | encrypt: 0.00811s CPU:0.64% MEM:53.7188MB | decrypt: 0.00724s CPU:0.59% MEM:53.5781MB
+AES-192    | encrypt: 0.00784s CPU:0.64% MEM:53.5625MB | decrypt: 0.00876s CPU:0.71% MEM:53.7448MB
+AES-256    | encrypt: 0.00786s CPU:0.64% MEM:53.7917MB | decrypt: 0.00726s CPU:0.60% MEM:53.6354MB
+DES        | encrypt: 0.00229s CPU:0.20% MEM:53.2604MB | decrypt: 0.00222s CPU:0.19% MEM:53.4427MB
+
+--- Testing 98 KB (100000 characters) over 3 iterations ---
+AES-128    | encrypt: 0.00986s CPU:0.77% MEM:53.7240MB | decrypt: 0.00907s CPU:0.73% MEM:53.7552MB
+AES-192    | encrypt: 0.00841s CPU:0.68% MEM:53.5833MB | decrypt: 0.00899s CPU:0.72% MEM:53.7135MB
+AES-256    | encrypt: 0.00940s CPU:0.75% MEM:53.7396MB | decrypt: 0.00919s CPU:0.74% MEM:53.5417MB
+DES        | encrypt: 0.00348s CPU:0.29% MEM:53.2969MB | decrypt: 0.00343s CPU:0.29% MEM:53.3385MB
+
+--- Testing 977 KB (1000000 characters) over 3 iterations ---
+AES-128    | encrypt: 0.01558s CPU:1.17% MEM:57.5469MB | decrypt: 0.01534s CPU:1.16% MEM:57.5000MB
+AES-192    | encrypt: 0.01782s CPU:1.32% MEM:57.4531MB | decrypt: 0.01809s CPU:1.34% MEM:57.4115MB
+AES-256    | encrypt: 0.01894s CPU:1.39% MEM:57.4115MB | decrypt: 0.01924s CPU:1.41% MEM:57.4896MB
+DES        | encrypt: 0.01582s CPU:1.19% MEM:57.2188MB | decrypt: 0.01579s CPU:1.19% MEM:56.1823MB
+
+--- Testing 9766 KB (10000000 characters) over 3 iterations ---
+AES-128    | encrypt: 0.06931s CPU:3.62% MEM:91.8438MB | decrypt: 0.07114s CPU:3.65% MEM:91.7292MB
+AES-192    | encrypt: 0.07810s CPU:3.88% MEM:91.7188MB | decrypt: 0.07601s CPU:3.88% MEM:91.7656MB
+AES-256    | encrypt: 0.08720s CPU:4.12% MEM:91.8229MB | decrypt: 0.08140s CPU:3.96% MEM:91.8385MB
+DES        | encrypt: 0.10000s CPU:4.44% MEM:91.5156MB | decrypt: 0.09636s CPU:4.35% MEM:81.9792MB
+
+--- Testing 48828 KB (50000000 characters) over 3 iterations ---
+AES-128    | encrypt: 0.30166s CPU:6.62% MEM:244.3594MB | decrypt: 0.28519s CPU:6.66% MEM:244.3542MB
+AES-192    | encrypt: 0.33595s CPU:6.89% MEM:244.3750MB | decrypt: 0.33491s CPU:6.88% MEM:244.3906MB
+AES-256    | encrypt: 0.37512s CPU:7.09% MEM:244.3438MB | decrypt: 0.37083s CPU:7.11% MEM:244.4115MB
+DES        | encrypt: 0.44109s CPU:7.34% MEM:244.0365MB | decrypt: 0.43869s CPU:7.33% MEM:196.3802MB
+
+--- Testing 97656 KB (100000000 characters) over 3 iterations ---
+AES-128    | encrypt: 0.58429s CPU:7.50% MEM:434.2865MB | decrypt: 0.56803s CPU:7.61% MEM:435.1771MB
+AES-192    | encrypt: 0.66392s CPU:7.72% MEM:435.1094MB | decrypt: 0.65738s CPU:7.79% MEM:435.1198MB
+AES-256    | encrypt: 0.72097s CPU:7.95% MEM:435.1510MB | decrypt: 0.72075s CPU:7.95% MEM:435.1510MB
+DES        | encrypt: 0.86770s CPU:8.11% MEM:434.7865MB | decrypt: 0.86345s CPU:8.11% MEM:339.4062MB
+
+--- Testing 195312 KB (200000000 characters) over 3 iterations ---
+AES-128    | encrypt: 1.13412s CPU:8.16% MEM:815.8854MB | decrypt: 1.14449s CPU:8.22% MEM:816.6198MB
+AES-192    | encrypt: 1.27014s CPU:8.39% MEM:816.5885MB | decrypt: 1.26434s CPU:8.40% MEM:816.6406MB
+AES-256    | encrypt: 1.43012s CPU:8.46% MEM:816.5677MB | decrypt: 1.42999s CPU:8.47% MEM:816.6927MB
+DES        | encrypt: 1.73317s CPU:8.52% MEM:816.3125MB | decrypt: 1.70558s CPU:8.56% MEM:625.5729MB
+
+====================
+ Asymmetric BENCHMARK 
+====================
+
+--- Testing 10 KB (10000 characters) over 3 iterations ---
+RSA-2048   | encrypt: 0.02651s CPU:1.85% MEM:53.8906MB | decrypt: 0.11177s CPU:4.68% MEM:53.8906MB
+
+--- Testing 98 KB (100000 characters) over 3 iterations ---
+RSA-2048   | encrypt: 0.18113s CPU:5.75% MEM:54.0677MB | decrypt: 1.03718s CPU:8.25% MEM:54.0000MB
+
+--- Testing 977 KB (1000000 characters) over 3 iterations ---
+RSA-2048   | encrypt: 1.76566s CPU:8.56% MEM:56.5156MB | decrypt: 10.34412s CPU:8.97% MEM:56.7083MB
+
+--- Testing 9766 KB (10000000 characters) over 3 iterations ---
+RSA-2048   | encrypt: 17.96355s CPU:9.00% MEM:78.1823MB | decrypt: 104.68469s CPU:9.02% MEM:68.1458MB
+
+--- Testing 48828 KB (50000000 characters) over 3 iterations ---
+RSA-2048   | encrypt: 87.86856s CPU:9.05% MEM:173.1198MB | decrypt: 522.84710s CPU:9.03% MEM:133.7552MB
+
+--- Testing 97656 KB (100000000 characters) over 3 iterations ---
+RSA-2048   | encrypt: 175.92082s CPU:9.07% MEM:407.1667MB | decrypt: 1043.83708s CPU:9.05% MEM:261.5833MB
+
+--- Testing 195312 KB (200000000 characters) over 3 iterations ---
+RSA-2048   | encrypt: 350.21208s CPU:9.05% MEM:752.8958MB | decrypt: 2036.04543s CPU:9.08% MEM:530.8438MB

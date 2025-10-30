@@ -1,0 +1,5 @@
+psutil
+matplotlib
+pycryptodome
+pytest
+numpy
